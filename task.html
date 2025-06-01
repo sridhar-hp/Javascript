@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <h1>student form</h1>
+    <form>
+        <table border="3">
+        <tr>
+           
+            <td>name</td>
+            <td><input type="text" name="" id="namevalue" placeholder="name "></td>
+        </tr>
+
+        <tr>
+            <td>age</td>
+            <td><input type="text" name="" id="agevalue" placeholder=" enter your age in number"></td>
+        </tr>
+
+         <tr>
+            <td>gender</td>
+            <td><input type="radio" name="gender" value="Male" id="male"> Male
+                <input type="radio" name="gender" value="Female" id="female">Female
+        </td>
+        </tr>
+        <tr>
+            <td >course</td>
+            <td>
+                <select name="course" id="coursename">
+                <option value="">---select course---</option>
+                <option value="javascript">javascript</option>
+                <option value="html">html</option>    
+                <option value="css">css</option>
+                <option value="java">java</option>
+                <option value="python">python</option>
+                
+            </select>
+        </tr>
+        <tr>
+            <td>email</td>
+            <td><input type="text" name="" id="emailvalue" placeholder=" enter your email"></td>
+
+        </tr>
+ 
+        <tr><td><button type="submit" id="save" onclick="sname(event)">save</button></td></tr>
+            
+    </table>
+         
+            
+<br>
+    </form>
+    <script src="task.js"></script>
+
+    <div id="myForm">
+
+        <table border="3">
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>course</th>
+                <th>gender</th>
+                <th>email</th>
+                <th>action</th>
+            </tr>
+
+            <tr id="tr">
+                <td> sri </td>
+                <td> 19 </td>
+                <td> javascript</td>
+                <td> male</td>
+                <td>sri@gmail.com</td>
+                <td><button id="redbut" onclick="deletbutton(event)">delet</button></td>
+            </tr>
+
+        </table>
+
+    </div>
+    </center>
+</body>
+</html>

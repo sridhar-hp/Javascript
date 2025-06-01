@@ -1,0 +1,22 @@
+<input id="one" type="number" >
+<input id="two" type="number" >
+<button onclick="change()">add </button>
+<p id="Result"> Result</p>
+
+<script>
+var inp1 = document.getElementById("one")//selecting
+var inp2=document.getElementById("two")//selecting
+var ans = document.getElementById("Result")//selecting
+
+    
+function change()
+{
+    var box1=Number(inp1.value)//storing
+    var box2=Number(inp2.value)//storing
+
+    var total = box1+box2
+    Result.textContent=total
+}
+
+
+</script>

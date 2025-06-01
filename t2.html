@@ -1,0 +1,33 @@
+
+<h1>guess nomber 1 to 10 </h1>
+<input id="guess">
+<button onclick="game()">done</button>
+<h3 id="answer">you answer is right / wrong </h3>
+<h2 id="chance">total chance is 10</h2>
+
+<script>
+var gess = document.getElementById("guess")
+var answer = document.getElementById("answer")
+var ch = document.getElementById("chance")
+var total = 10
+var randomnomner = Math.floor(Math.random()*10)+1
+console.log(randomnomner)
+function game()
+{
+var guessnomber = gess.value
+
+if(randomnomner==guessnomber)
+{
+answer.textContent="you answer is right "
+
+}
+else
+{
+answer.textContent="you answer is wrong "
+total =total - 1
+chance.textContent="total chance is "+total 
+}
+}
+
+
+</script>

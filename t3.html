@@ -1,0 +1,34 @@
+<style>
+div{
+    height: 10px;
+    width: 100px;
+    background-color: blue;
+   
+}
+</style>
+
+<div id="color"></div>
+<button onclick="change()">change color</button>
+<button onmouseenter="size()">changesize</button>
+
+
+<script>
+var bgcolor = document.getElementById("color")
+
+function change()
+{
+bgcolor.style.backgroundColor="red"
+setTimeout(function (a) { bgcolor.style.backgroundColor="green"  
+},1000);
+setTimeout( function (b) { bgcolor.style.backgroundColor="yellow"  
+},2000);
+setTimeout((c) => { bgcolor.style.backgroundColor="orange"  
+},3000);
+
+}  
+
+function size(){
+    bgcolor.style.width="100%"
+    bgcolor.style.transition="3s"
+}
+</script>
